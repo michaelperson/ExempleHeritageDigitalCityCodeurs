@@ -23,5 +23,11 @@ namespace ExempleHeritageDigitalCityCodeurs.Models
         {
             Console.WriteLine("The dog says : Wouf Wif argggggh");
         }
+
+
+        public override string ToString()
+        {
+            return $"Je suis un chien et {base.ToString()} ";
+        }
     }
 }

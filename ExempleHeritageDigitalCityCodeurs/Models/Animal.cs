@@ -88,5 +88,11 @@ namespace ExempleHeritageDigitalCityCodeurs.Models
         {
             Console.WriteLine("The animal ???");
         }
+
+        public override string ToString()
+        {
+            string type = this.GetType().Name;
+            return $"({type})je m'appelle {Name}";
+        }
     }
 }

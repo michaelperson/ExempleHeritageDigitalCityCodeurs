@@ -37,5 +37,10 @@ namespace ExempleHeritageDigitalCityCodeurs.Models
         {
             Console.WriteLine("I move like a ship on a stormy sea whit the wind whispered my skin!");
         }
+
+        public override string ToString()
+        {
+            return $"Je suis un chameau {base.ToString()}";
+        }
     }
 }

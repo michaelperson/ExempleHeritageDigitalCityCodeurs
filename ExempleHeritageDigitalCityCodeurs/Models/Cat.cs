@@ -8,6 +8,8 @@ namespace ExempleHeritageDigitalCityCodeurs.Models
 {
     public  class Cat: Animal
     {
+        
+
         private int _papates;
          public new int NbPaws { 
             
@@ -31,6 +33,12 @@ namespace ExempleHeritageDigitalCityCodeurs.Models
         public override void MakeNoise()
         {
             Console.WriteLine("The cat says : I'm a god!");
+        }
+
+        public override string ToString()
+        {
+            string VientDuParent = base.ToString();
+            return $"Je suis un chat et {VientDuParent}";
         }
     }
 }
